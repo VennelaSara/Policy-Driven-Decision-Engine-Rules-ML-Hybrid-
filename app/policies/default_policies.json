@@ -1,0 +1,14 @@
+[
+    {
+        "condition": {"field": "amount", "op": ">", "value": 1000},
+        "action": "flag"
+    },
+    {
+        "condition": {"field": "user_role", "op": "==", "value": "guest"},
+        "action": "review"
+    },
+    {
+        "condition": {"field": "department", "op": "==", "value": "IT"},
+        "action": "allow"
+    }
+]
